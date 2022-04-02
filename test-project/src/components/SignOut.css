@@ -1,0 +1,11 @@
+.sign_out {
+    min-width: 30%;
+    padding: 17px 30px;
+    margin-top: 20px;
+    background: black;
+    border: none;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: "Inter";
+    border-radius: 3px;
+}
