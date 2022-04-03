@@ -39,3 +39,20 @@
     font-size: 30px;
     align-items: flex-end;
 }
+
+h1 {
+    display: flex;
+    margin-left: 2%;
+}
+
+/* .title {
+    border: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.body {
+    border: solid;
+    display: flex;
+    justify-content: center;
+} */

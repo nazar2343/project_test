@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { useDispatch } from 'react-redux';
 import { login } from '../features/userSlice';
 import './Login.css';
-import axios from 'axios';
 
 
 const Login = () => {
