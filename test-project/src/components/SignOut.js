@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setUsers } from "../service/getterUsers";
 import { selectUser, userSelect, signOut, getUsers } from "../features/userSlice";
 import "./SignOut.css";
 import axios from 'axios'
