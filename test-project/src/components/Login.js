@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, {useState, useEffect} from "react";
 import { useDispatch } from 'react-redux';
 import { login } from '../features/userSlice';
-import './Login.css'
+import './Login.css';
+import axios from 'axios';
+
 
 const Login = () => {
 
@@ -26,11 +28,13 @@ const Login = () => {
 
     return (
         <>
+        <div className='container_header'>
         <h1>Company A</h1>
+        <h2>Login</h2>
+        </div>
 
         <div className='login'>
             <form className='form-log' onSubmit={(e) => handleSubmit(e)}>
-                <h2>Login</h2>
                 <input
                     type="name"
                     placeholder="Name"
@@ -49,10 +53,13 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type='submit' className='submit_btn'>Submit</button>
+                <button type='submit' className='submit_btn'>Sign in</button>
             </form>
         </div>
+        <div className='container'>
         <h3>Footer</h3>
+        </div>
+        
         </>
     )
 }

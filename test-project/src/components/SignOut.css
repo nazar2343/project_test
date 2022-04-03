@@ -1,11 +1,41 @@
 .sign_out {
     min-width: 30%;
-    padding: 17px 30px;
-    margin-top: 20px;
-    background: black;
-    border: none;
-    color: aliceblue;
-    font-size: 14px;
+    font-size: 30px;
     font-family: "Inter";
-    border-radius: 3px;
+    background: rgb(165, 161, 161);
+    outline:0 none !important;
+    cursor: pointer;
+}
+
+.container_header1 {
+    margin: 1%;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    padding: 0.5%;
+}
+
+.container_header3 {
+    margin-left: 65%;
+    border: solid;
+    padding: 0.5%;
+}
+
+.container_header2{
+    border: solid;
+    padding: 0.5%;
+}
+
+.container_header4{
+    border: solid;
+    padding: 0.5%;
+}
+
+.container1 {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 35.5%;
+    font-size: 30px;
+    align-items: flex-end;
 }

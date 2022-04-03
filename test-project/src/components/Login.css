@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     font-family: "Inter";
+    margin-top: 10%;
 }
 
 .form-log {
@@ -12,13 +13,13 @@
     flex-direction: column;
 }
 
-.form-log>h2 {
+/* .form-log>h2 {
     font-size: 35px;
     margin-bottom: 5%;
     padding-bottom: 5%;
     letter-spacing: -1%;
     border: solid;
-}
+} */
 
 .form-log>input {
     min-width: 380px;
@@ -41,19 +42,34 @@
     font-size: 14px;
     font-family: "Inter";
     border-radius: 3px;
+    cursor: pointer;
 }
 
-h1 {
-    border: solid;
-    width: 15%;
-    margin: 2%;
-    margin-top: 2%;
-}
-
-h3 {
+.container {
     border: solid;
     display: flex;
     justify-content: center;
-    margin-top: -10%;
+    margin-top: 10.4%;
     font-size: 30px;
+    align-items: flex-end;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_header h1{
+    margin: 1%;
+    font-size: 30px;
+    border: solid;
+    width: 15%;
+    padding: 0.5%;
+}
+
+.container_header h2{
+    margin: 1%;
+    font-size: 30px;
+    border: solid;
+    padding: 0.5%;
 }
