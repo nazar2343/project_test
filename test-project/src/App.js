@@ -4,7 +4,7 @@ import Login from './components/Login';
 import SignOut from './components/SignOut';
 import { selectUser } from './features/userSlice';
 
-function App() {
+const App = () => {
   const user = useSelector(selectUser);
 
   return (

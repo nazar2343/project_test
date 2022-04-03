@@ -25,9 +25,12 @@ const Login = () => {
     };
 
     return (
+        <>
+        <h1>Company A</h1>
+
         <div className='login'>
             <form className='form-log' onSubmit={(e) => handleSubmit(e)}>
-                <h1>Login here</h1>
+                <h2>Login</h2>
                 <input
                     type="name"
                     placeholder="Name"
@@ -48,8 +51,9 @@ const Login = () => {
                 />
                 <button type='submit' className='submit_btn'>Submit</button>
             </form>
-
         </div>
+        <h3>Footer</h3>
+        </>
     )
 }
 

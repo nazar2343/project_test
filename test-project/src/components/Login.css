@@ -12,14 +12,15 @@
     flex-direction: column;
 }
 
-.form-log > h1 {
+.form-log>h2 {
     font-size: 35px;
     margin-bottom: 5%;
     padding-bottom: 5%;
     letter-spacing: -1%;
+    border: solid;
 }
 
-.form-log > input {
+.form-log>input {
     min-width: 380px;
     padding: 20px 0;
     padding-left: 5%;
@@ -40,4 +41,19 @@
     font-size: 14px;
     font-family: "Inter";
     border-radius: 3px;
+}
+
+h1 {
+    border: solid;
+    width: 15%;
+    margin: 2%;
+    margin-top: 2%;
+}
+
+h3 {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+    font-size: 30px;
 }
