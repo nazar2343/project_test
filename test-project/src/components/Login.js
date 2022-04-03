@@ -51,8 +51,13 @@ const Login = () => {
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                />
-                <button type='submit' className='submit_btn'>Sign in</button>
+                /> 
+                {
+                    name && email && password 
+                    ? <button type='submit' className='submit_btn'>Sign in</button>
+                    :<button type='submit'disabled className='submit_btn'>Sign in</button>
+
+                }
             </form>
         </div>
         <div className='container'>

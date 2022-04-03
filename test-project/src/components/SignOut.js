@@ -14,15 +14,15 @@ const SignOut = () => {
         dispatch(signOut());
     }
 
-
-    const getData = () => {
+    useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(res => {
                 dispatch(getUsers({
                     users: res.data
                 }))
             })
-    }
+    })
+
 
     return (
         <>
@@ -41,9 +41,7 @@ const SignOut = () => {
             <h1>
                 <span>{user.name}</span>
             </h1>
-            <button className='btn' onClick={() => {
-                getData()
-            }}> Add from JSON</button>
+
             <div className="action">
                 <div className="head">{
                     users?.users?.map(e => <div className="title">Title:{e.title}
