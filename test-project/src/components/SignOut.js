@@ -25,7 +25,7 @@ const SignOut = () => {
     }
 
     return (
-        <div>
+        <>
             <div className='container_header1'>
                 <div className='container_header2'>
                     <h3 className="company">Company A</h3>
@@ -44,14 +44,17 @@ const SignOut = () => {
             <button className='btn' onClick={() => {
                 getData()
             }}> Add from JSON</button>
-            <div>{
-                users?.users?.map(e=><div className="title">Title:{e.title} <div className="body">Body:{e.body}</div></div>)
-            }</div>
+            <div className="action">
+                <div className="head">{
+                    users?.users?.map(e => <div className="title">Title:{e.title}
+                        <div className="body">Body:{e.body}</div></div>)
+                }</div>
+            </div>
 
             <div className='container1'>
                 <h3>Footer</h3>
             </div>
-        </div>
+        </>
 
     );
 }
