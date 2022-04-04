@@ -12,19 +12,21 @@ const Login = () => {
 
     const dispatch = useDispatch();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
-
+ 
+        const userCredentials = {
+            name: name,
+            email: email,
+            password: password,
+        }
         dispatch(
-            login({
-                name: name,
-                email: email,
-                password: password,
-                loggedIn: true,
-            })
+            login(userCredentials)
         );
-    };
+        await localStorage.setItem('Auth', JSON.stringify(userCredentials))
 
+    };
+    
     return (
         <>
         <div className='container_header'>
@@ -55,8 +57,7 @@ const Login = () => {
                 {
                     name && email && password 
                     ? <button type='submit' className='submit_btn'>Sign in</button>
-                    :<button type='submit'disabled className='submit_btn'>Sign in</button>
-
+                    :<button type='submit' disabled className='submit_btn'>Sign in</button>
                 }
             </form>
         </div>
