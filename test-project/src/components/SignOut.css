@@ -5,6 +5,7 @@
     background: rgb(165, 161, 161);
     outline:0 none !important;
     cursor: pointer;
+    display: flex;
 }
 
 .container_header1 {
